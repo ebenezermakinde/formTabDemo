@@ -1,0 +1,87 @@
+
+body{
+
+	background-image: url('../imagesexample/bacgd.jpg');
+}
+
+.topcolorshaping{
+
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.toptab{
+
+	background-color: #009EDF;
+	/*height: 50px;*/
+	width: 530px;
+	display: inline;
+}
+
+.active {
+  background-color: #009EDF;
+
+}
+
+
+#formReg{
+
+background-color: #009EDF;
+
+}
+
+#formLogin{
+
+	background-color: #009EDF;
+	height:400px; 
+}
+
+#formUser{
+
+	background-color: #009EDF;
+	height:400px; 
+}
+
+.gender{
+
+	/*width: 400px;*/
+}
+
+
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  margin: 10px;
+}
+
+.divrow{
+	display: inline;
+
+}
+
+.btn1{
+
+ float: right;
+}
+
+.form{
+
+	color: white;
+
+}
+
+.activeblue{
+
+ background-color: #009EDF;
+}
+
+.activered{
+  background-color: #B63622;
+}
+
+.activepurple{
+  background-color: #6D2A88;
+}
