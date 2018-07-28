@@ -1,2 +1,6 @@
-This is the first version of my tab reg form.
-Needs further updating
+This is the final commit for this form.
+Updated with theme selection.
+
+
+Note:
+This form has no validation included

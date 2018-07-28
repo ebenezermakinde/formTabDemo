@@ -28,9 +28,10 @@
 
        <div class="row">
     	   <div class="col-md-12">
+            <h5>Click on a color to reflex your style for this form</h5>
     		<a href="#"><img src="imagesexample/blue.jpg" class="activeblue topcolorshaping"></a>
-    	    <a href="#"><img src="imagesexample/pink.jpg" class="activered topcolorshaping"></a>
-    		<a href="#"><img src="imagesexample/red.jpg" class="activepurple topcolorshaping"></a>
+    	    <a href="#"><img src="imagesexample/purple.jpg" class="activepurple topcolorshaping"></a>
+    		<a href="#"><img src="imagesexample/red.jpg" class="activered topcolorshaping"></a>
 
     	  </div>
       </div>
@@ -40,7 +41,7 @@
             <div class="row">
               <div class="col-md-4 formReg"><a href="#formReg" id="reg">Register</a></div>  
               <div class="col-md-4 formLogin"><a href="#formLogin" id="login">Login</a></div>
-              <div class="col-md-4 formLogin"><a href="#formUser" id="user">Reset Password</a></div>
+              <div class="col-md-4 formUser"><a href="#formUser" id="user">Reset Password</a></div>
             </div>
             </div>
       </div>
@@ -191,41 +192,78 @@
       
     
      $('#formLogin').hide();
+     $('.formLogin').css('opacity','0.5');
      $('#formUser').hide();
+     $('.formUser').css('opacity','0.5');
 
      $('#reg').click(function(){
 
         $('#formReg').show();
+        $('.formReg').css('opacity','1');
         $('#formLogin').hide().fadeOut();
+        $('.formLogin').css('opacity','0.5');
         $('#formUser').hide().fadeOut();
+        $('.formUser').css('opacity','0.5');
     
      })
 
      $('#login').click(function(){
 
         $('#formLogin').show()
+        $('.formLogin').css('opacity','1');
         $('#formReg').hide().fadeOut()
+        $('.formReg').css('opacity','0.5');
         $('#formUser').hide().fadeOut()
+        $('.formUser').css('opacity','0.5');
     
      })
 
       $('#user').click(function(){
 
         $('#formUser').show();
+        $('.formUser').css('opacity','1');
         $('#formLogin').hide().fadeOut();
+        $('.formLogin').css('opacity','0.5');
         $('#formReg').hide().fadeOut();
+        $('.formReg').css('opacity','0.5');
     
      })
 
 
+      //Color Scheme for activered theme
       $('.activered').click(function(){
 
-        $('#formReg').addClass('activered');
-        $('#formLogin').addClass('activered');
-        $('#formUser').addClass('activered');
+        $('#formReg').css('background-color','#B63622');
+        $('#formLogin').css('background-color','#B63622');
+        $('#formUser').css('background-color','#B63622');
+        $('.toptab').css('background-color','#B63622');
+
+      })
+
+      //Color Scheme for activeblue theme
+      $('.activeblue').click(function(){
+
+        $('#formReg').css('background-color','#009EDF');
+        $('#formLogin').css('background-color','#009EDF');
+        $('#formUser').css('background-color','#009EDF');
+        $('.toptab').css('background-color','#009EDF');
+
+      })
+
+      //Color Scheme for activepurple theme
+      $('.activepurple').click(function(){
+
+        $('#formReg').css('background-color','#6D2A88');
+        $('#formLogin').css('background-color','#6D2A88');
+        $('#formUser').css('background-color','#6D2A88');
+        $('.toptab').css('background-color','#6D2A88');
 
       })
      
+
+
+      //This functions should handle the background color schemes.
+
 
 
 

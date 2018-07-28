@@ -4,6 +4,11 @@ body{
 	background-image: url('../imagesexample/bacgd.jpg');
 }
 
+a:hover{
+	text-decoration: none;
+	color: white;
+}
+
 .topcolorshaping{
 
   margin-top: 20px;
@@ -71,17 +76,4 @@ a{
 
 	color: white;
 
-}
-
-.activeblue{
-
- background-color: #009EDF;
-}
-
-.activered{
-  background-color: #B63622;
-}
-
-.activepurple{
-  background-color: #6D2A88;
 }
