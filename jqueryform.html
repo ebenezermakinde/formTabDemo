@@ -13,7 +13,9 @@
     <!-- Boostrap css -->
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <!-- fontawesome -->
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css"> -->
+    <!-- External Js file link -->
+    <script type="text/javascript" src="js/validate.js"></script>
     <!--Form sheet css path -->
 	<link rel="stylesheet" type="text/css" href="formcss/jqueryform.css">
 </head>
@@ -54,13 +56,14 @@
                            services tips. It's what all the cool kids are doing nowadays
 					</thead>
 
+
          			<div class="form-group ">
          				
          				<div class="input-group">
          				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>	
-         				<input type="text" name="yourname" id="yourname" class="form-control" placeholder="myusername">
+         				<input type="text" name="yourname" id="yourname" class="form-control" placeholder="myusername" onmouseleave="formReg();">
          				</div>
-
+                        <span id="erroruser" class="error"></span>
          			</div>
 
          			<div class="form-group">
@@ -68,8 +71,9 @@
          				
          				<div class="input-group">
          				<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-         				<input type="email" name="youremail" id="youremail" class="form-control" placeholder="myusername@gmail.com">
+         				<input type="email" name="youremail" id="youremail" class="form-control" placeholder="myusername@gmail.com" onmouseleave="formReg();">
          				</div>
+                         <span id="erroremail" class="error"></span>
          			</div>
 
          			<div class="form-group">
@@ -77,16 +81,18 @@
          				
          				<div class="input-group">
          				<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-         				<input type="password" name="password" id="password" class="form-control" placeholder="mypassword">
+         				<input type="password" name="password" id="password" class="form-control" placeholder="mypassword" onmouseleave="formReg();">
          			    </div>
+                        <span id="errorpass1" class="error"></span>
          			</div>
 
          			<div class="form-group">
          				
          				<div class="input-group">                                               
          				<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-         				<input type="password" name="passwd" id="passwd" class="form-control" placeholder="mypassword">
-         				</div>	
+         				<input type="password" name="passwd" id="passwd" class="form-control" placeholder="mypassword" onmouseleave="formReg();">
+         				</div>
+                        <span id="errorpass2" class="error"></span>	
          			</div>
 
          			<div class="form-group">
@@ -182,14 +188,6 @@
 
    <script type="text/javascript">
     $(document).ready(function(){
-
-    $('input').keyup(function(){
-
-    $('#yourname').is('') ? alert('This field cannot be empty') : $('#yourname').css('background-color','red');
-    $('#youremail').is('') ? alert('This field cannot be empty') : $('#youremail').css('background-color','red'); 
-
-             });
-
       
     
      $('#formLogin').hide();
@@ -260,12 +258,7 @@
         $('.toptab').css('background-color','#6D2A88');
 
       })
-     
-
-
-      //This functions should handle the background color schemes.
-
-
+    
 
 
     })

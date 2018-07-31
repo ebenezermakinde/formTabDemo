@@ -3,4 +3,4 @@ Updated with theme selection.
 
 
 Note:
-This form has no validation included
+This form only includes validation for user form
